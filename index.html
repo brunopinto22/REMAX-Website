@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>RE/MAX Portugal</title>
+  <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css.css">
+  <link href="fontawesome/css/all.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav>
+
+    <span class="hide-bg"><button><i class="fas fa-bars"></i></button></span>
+
+    <a id="btn-n"><img src="img/header_logo.webp"></a>
+    <select id="dropbox" class="lang">
+      <option>Português</option>
+      <option>Inglês</option>
+    </select>
+
+    <div class="right">
+      <a id="btn">Empreendimentos</a>
+      <a>RE/MAX Collection</a>
+      <a>Comprar</a>
+      <a>Vender</a>
+      <div class="dropdown">
+        <button id="dropbox">Agências</button>
+
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <a id="login"><i class="far fa-user-circle"></i>Entrar</a>
+    </div>
+
+    <span class="hide-bg hide-right"><a id="login"><i class="far fa-user-circle"></i>Entrar</a></span>
+  </nav>
+
+  <!-- ------------------------- sidebar ------------------------- -->
+  <div id="navbar-bg"></div>
+  <div id="navbar">
+    <header>
+      <i class="fas fa-arrow-left"></i><img src="img/header_logo.webp"></a>
+      <select id="dropbox" class="right">
+        <option>Português</option>
+        <option>Inglês</option>
+      </select>
+    </header>
+    <section>
+      <a id="btn">Empreendimentos</a>
+      <a>RE/MAX Collection</a>
+      <a>Comprar</a>
+      <a>Vender</a>
+      <div class="dropdown">
+        <button id="dropbox">Agências</button>
+
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+
+      <div class="login">
+        <button class="btn">Registar</button>
+        <button class="btn-s">Entrar</button>
+      </div>
+    </section>
+  </div>
+  <!-- ------------------------- sidebar ------------------------- -->
+
+
+  <div id="main" class="main">
+
+    <div class="banner">
+      <div class="banner-content">
+        <h1>Isto nunca foi tão simples!</h1>
+
+        <button id="1" class="selected" style="border-radius: 5px 0 0 0;" onclick="select(1)">Comprar</button>
+        <button id="2" style="border-radius: 0 5px 0 0;" onclick="select(2)">Arrendar</button>
+        <br>
+        <table style="width: 100%; background-color: white;">
+          <tr>
+            <td style="width: 91%;">
+              <input id="place" type="text" placeholder="Onde? (Concelho ou Freguesia ou Zona ou Morada)">
+            </td>
+            <td style="text-align: center;">
+              <a class="search" style="border-left: 1px solid #d3d3d3;"><i class="fas fa-search"></i></a>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+
+
+
+    <div class="content">
+
+      <a>
+        <div class="small-banner" style="background-image: url('img/campaign-banner1.webp');"></div>
+      </a>
+      <a>
+        <div class="small-banner" style="background-image: url('img/campaign-banner2.webp');"></div>
+      </a>
+
+
+      <section>
+        <span class="title">
+          <h2>Novidades</h2><a>Ver todos</a>
+        </span>
+
+        <div class="grid-prd">
+
+          <a href="#">
+            <div class="prd">
+              <div class="prd-main">
+                <img src="img/prd.jpg">
+                <i class="fas fa-heart"></i>
+                <div class="prd-price">
+                  <h1>xxxx€</h1>
+                </div>
+              </div>
+              <div class="prd-info">
+                <h1>Aveiro - <span>Águeda</span></h1>
+                <img class="icon" src="img/acc.jpg">
+              </div>
+              <div class="prd-details" style="color: #4c555f;">
+                <h1>Apartamento</h1>
+                <h2><i class="fas fa-home"></i>172 m<sup>2</sup><i class="fas fa-bath"></i>2<i class="fas fa-bed"></i>2
+                </h2>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="prd">
+              <div class="prd-main">
+                <img src="img/prd.jpg">
+                <i class="fas fa-heart"></i>
+                <div class="prd-price">
+                  <h1>xxxx€</h1>
+                </div>
+              </div>
+              <div class="prd-info">
+                <h1>Aveiro - <span>Águeda</span></h1>
+                <img class="icon" src="img/acc.jpg">
+              </div>
+              <div class="prd-details" style="color: #4c555f;">
+                <h1>Apartamento</h1>
+                <h2><i class="fas fa-home"></i>172 m<sup>2</sup><i class="fas fa-bath"></i>2<i class="fas fa-bed"></i>2
+                </h2>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="prd">
+              <div class="prd-main">
+                <img src="img/prd.jpg">
+                <i class="fas fa-heart"></i>
+                <div class="prd-price">
+                  <h1>xxxx€</h1>
+                </div>
+              </div>
+              <div class="prd-info">
+                <h1>Aveiro - <span>Águeda</span></h1>
+                <img class="icon" src="img/acc.jpg">
+              </div>
+              <div class="prd-details" style="color: #4c555f;">
+                <h1>Apartamento</h1>
+                <h2><i class="fas fa-home"></i>172 m<sup>2</sup><i class="fas fa-bath"></i>2<i class="fas fa-bed"></i>2
+                </h2>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="prd">
+              <div class="prd-main">
+                <img src="img/prd.jpg">
+                <i class="fas fa-heart"></i>
+                <div class="prd-price">
+                  <h1>xxxx€</h1>
+                </div>
+              </div>
+              <div class="prd-info">
+                <h1>Aveiro - <span>Águeda</span></h1>
+                <img class="icon" src="img/acc.jpg">
+              </div>
+              <div class="prd-details" style="color: #4c555f;">
+                <h1>Apartamento</h1>
+                <h2><i class="fas fa-home"></i>172 m<sup>2</sup><i class="fas fa-bath"></i>2<i class="fas fa-bed"></i>2
+                </h2>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+      </section>
+
+      <section>
+        <span class="title">
+          <h2>RE/MAX Collection</h2><a>Ver todos</a>
+        </span>
+
+        <div class="grid-prd">
+
+          <a href="#">
+            <div class="prd" style="background: #003866;">
+              <div class="prd-main">
+                <img src="img/prd.jpg">
+                <div class="collection">
+                  <h1>Collection</h1>
+                </div>
+                <div class="virtual">
+                  <h1>Visita virtual</h1>
+                </div>
+                <i class="fas fa-heart"></i>
+                <div class="prd-price">
+                  <h1>xxxx€</h1>
+                </div>
+              </div>
+              <div class="prd-info">
+                <h1>Aveiro - <span>Águeda</span></h1>
+                <img class="icon" src="img/acc.jpg">
+              </div>
+              <div class="prd-details" style="color: white;">
+                <h1>Apartamento</h1>
+                <h2><i class="fas fa-home"></i>172 m<sup>2</sup><i class="fas fa-bath"></i>2<i class="fas fa-bed"></i>2
+                </h2>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="prd" style="background: #003866;">
+              <div class="prd-main">
+                <img src="img/prd.jpg">
+                <div class="collection">
+                  <h1>Collection</h1>
+                </div>
+                <div class="virtual">
+                  <h1>Visita virtual</h1>
+                </div>
+                <i class="fas fa-heart"></i>
+                <div class="prd-price">
+                  <h1>xxxx€</h1>
+                </div>
+              </div>
+              <div class="prd-info">
+                <h1>Aveiro - <span>Águeda</span></h1>
+                <img class="icon" src="img/acc.jpg">
+              </div>
+              <div class="prd-details" style="color: white;">
+                <h1>Apartamento</h1>
+                <h2><i class="fas fa-home"></i>172 m<sup>2</sup><i class="fas fa-bath"></i>2<i class="fas fa-bed"></i>2
+                </h2>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="prd" style="background: #003866;">
+              <div class="prd-main">
+                <img src="img/prd.jpg">
+                <div class="collection">
+                  <h1>Collection</h1>
+                </div>
+                <div class="virtual">
+                  <h1>Visita virtual</h1>
+                </div>
+                <i class="fas fa-heart"></i>
+                <div class="prd-price">
+                  <h1>xxxx€</h1>
+                </div>
+              </div>
+              <div class="prd-info">
+                <h1>Aveiro - <span>Águeda</span></h1>
+                <img class="icon" src="img/acc.jpg">
+              </div>
+              <div class="prd-details" style="color: white;">
+                <h1>Apartamento</h1>
+                <h2><i class="fas fa-home"></i>172 m<sup>2</sup><i class="fas fa-bath"></i>2<i class="fas fa-bed"></i>2
+                </h2>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="prd" style="background: #003866;">
+              <div class="prd-main">
+                <img src="img/prd.jpg">
+                <div class="collection">
+                  <h1>Collection</h1>
+                </div>
+                <div class="virtual">
+                  <h1>Visita virtual</h1>
+                </div>
+                <i class="fas fa-heart"></i>
+                <div class="prd-price">
+                  <h1>xxxx€</h1>
+                </div>
+              </div>
+              <div class="prd-info">
+                <h1>Aveiro - <span>Águeda</span></h1>
+                <img class="icon" src="img/acc.jpg">
+              </div>
+              <div class="prd-details" style="color: white;">
+                <h1>Apartamento</h1>
+                <h2><i class="fas fa-home"></i>172 m<sup>2</sup><i class="fas fa-bath"></i>2<i class="fas fa-bed"></i>2
+                </h2>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+      </section>
+
+
+      <section>
+
+        <span class="title">
+          <h2>Empreendimentos</h2><a>Ver todos</a>
+        </span>
+
+        <div class="grid-prdemp">
+
+          <a>
+            <div class="prd">
+              <div class="prd-main">
+                <img src="img/prd5.jpg">
+                <i class="fas fa-heart"></i>
+                <div class="prd-price">
+                  <h2>Desde: xxx xxx€</h2>
+                  <h2>Aveiro</h1>
+                    <h1>Serpa Pinto</h1>
+                    <img class="icon" src="img/acc.jpg">
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a>
+            <div class="prd">
+              <div class="prd-main">
+                <img src="img/prd5.jpg">
+                <i class="fas fa-heart"></i>
+                <div class="prd-price">
+                  <h2>Desde: xxx xxx€</h2>
+                  <h2>Aveiro</h1>
+                    <h1>Serpa Pinto</h1>
+                    <img class="icon" src="img/acc.jpg">
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a>
+            <div class="prd">
+              <div class="prd-main">
+                <img src="img/prd5.jpg">
+                <i class="fas fa-heart"></i>
+                <div class="prd-price">
+                  <h2>Desde: xxx xxx€</h2>
+                  <h2>Aveiro</h1>
+                    <h1>Serpa Pinto</h1>
+                    <img class="icon" src="img/acc.jpg">
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a>
+            <div class="prd">
+              <div class="prd-main">
+                <img src="img/prd5.jpg">
+                <i class="fas fa-heart"></i>
+                <div class="prd-price">
+                  <h2>Desde: xxx xxx€</h2>
+                  <h2>Aveiro</h1>
+                    <h1>Serpa Pinto</h1>
+                    <img class="icon" src="img/acc.jpg">
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+      </section>
+
+
+
+
+      <section>
+        <h1>Concelhos mais procurados</h1>
+        <div class="grid-local">
+          <a style="background-image: url('img/l_lisboa.png');">
+            <div class="banner-local">
+              <h1>Lisboa</h1>
+              <span>Ver Mais</span>
+            </div>
+          </a>
+          <a style="background-image: url('img/l_porto.png');">
+            <div class="banner-local">
+              <h1>Porto</h1>
+              <span>Ver Mais</span>
+            </div>
+          </a>
+          <a style="background-image: url('img/l_coimbra.png');">
+            <div class="banner-local">
+              <h1>Coimbra</h1>
+              <span>Ver Mais</span>
+            </div>
+          </a>
+
+          <a style="background-image: url('img/l_braga.png');">
+            <div class="banner-local">
+              <h1>Braga</h1>
+              <span>Ver Mais</span>
+            </div>
+          </a>
+          <a style="background-image: url('img/l_faro.png');">
+            <div class="banner-local">
+              <h1>Faro</h1>
+              <span>Ver Mais</span>
+            </div>
+          </a>
+          <a style="background-image: url('img/l_leiria.png');">
+            <div class="banner-local">
+              <h1>Leiria</h1>
+              <span>Ver Mais</span>
+            </div>
+          </a>
+
+        </div>
+
+      </section>
+
+      <section>
+        <h3>Agentes & Agências</h3>
+        <div class="grid-agencias">
+          <h1>Pessoas a falar com pessoas. Todos os dias.</h1>
+          <h2>Em Portugal, desde 2000, a RE/MAX Portugal tem vindo a consolidar a sua liderança.
+            A força da marca, a eficiência do serviço e satisfação dos seus colaboradores têm
+            vindo a ser reconhecidas e premiadas anualmente por várias entidades. Em Portugal,
+            a RE/MAX é ainda líder em número de transacções, agências e agentes associados.</h2>
+
+          <div class="img" style="background-image: url('img/banner3.webp');">
+            <div class="banner-local">
+              <button class="btn">Encontrar Agente</button>
+              <button class="btn2">Encontrar Agência</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+
+        <div class="grid-empreendimentos">
+          <div class="img" style="background-image: url('img/banner2.webp');"></div>
+
+          <div style="margin: auto 0;">
+            <h1>Empreendimentos</h1>
+            <h2>Se é investidor, comprador ou até mesmo construtor consulte a nossa carteira de empreendimentos RE/MAX.
+              Pesquise todos os empreendimentos que a RE/MAX tem em carteira.</h2>
+            <a>Descobrir empreendimentos</a>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <section>
+
+        <div class="grid-trends">
+          <h1>Pesquisas mais comuns</h1>
+
+          <div class="dropdown">
+            <button onclick="abrir(3)" class="dropbtn">Apartamento<i id="4" class="fas fa-chevron-down"></i></button>
+            <div id="3" class="dropdown-content">
+              <a href="#">Lisboa</a>
+              <a href="#">Sintra</a>
+              <a href="#">Cascais</a>
+              <a href="#">Oeiras</a>
+              <a href="#">Porto</a>
+              <a href="#">Amadora</a>
+              <a href="#">Vila Nova de Gaia</a>
+              <a href="#">Almada</a>
+              <a href="#">Loures</a>
+              <a href="#">Vila Franca de Xira</a>
+              <a href="#">Seixal</a>
+              <a href="#">Odivelas</a>
+              <a href="#">Braga</a>
+              <a href="#">Portimão</a>
+              <a href="#">Matosinhos</a>
+              <a href="#">Setúbal</a>
+              <a href="#">Albufeira</a>
+              <a href="#">Maia</a>
+              <a href="#">Loulé</a>
+              <a href="#">Gondomar</a>
+              <a href="#">Coimbra</a>
+              <a href="#">Mafra</a>
+              <a href="#">Leiria</a>
+              <a href="#">Barreiro</a>
+              <a href="#">Funchal</a>
+              <a href="#">Alequer</a>
+              <a href="#">Vila Nova de Famalicão</a>
+              <a href="#">Faro</a>
+              <a href="#">Silves</a>
+              <a href="#">Montijo</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button onclick="abrir(5)" class="dropbtn">Loja<i id="6" class="fas fa-chevron-down"></i></button>
+            <div id="5" class="dropdown-content">
+              <a href="#">Lisboa</a>
+              <a href="#">Sintra</a>
+              <a href="#">Cascais</a>
+              <a href="#">Oeiras</a>
+              <a href="#">Porto</a>
+              <a href="#">Amadora</a>
+              <a href="#">Vila Nova de Gaia</a>
+              <a href="#">Almada</a>
+              <a href="#">Loures</a>
+              <a href="#">Vila Franca de Xira</a>
+              <a href="#">Seixal</a>
+              <a href="#">Odivelas</a>
+              <a href="#">Braga</a>
+              <a href="#">Portimão</a>
+              <a href="#">Matosinhos</a>
+              <a href="#">Setúbal</a>
+              <a href="#">Albufeira</a>
+              <a href="#">Maia</a>
+              <a href="#">Loulé</a>
+              <a href="#">Gondomar</a>
+              <a href="#">Coimbra</a>
+              <a href="#">Mafra</a>
+              <a href="#">Leiria</a>
+              <a href="#">Barreiro</a>
+              <a href="#">Funchal</a>
+              <a href="#">Alequer</a>
+              <a href="#">Vila Nova de Famalicão</a>
+              <a href="#">Faro</a>
+              <a href="#">Silves</a>
+              <a href="#">Montijo</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button onclick="abrir(7)" class="dropbtn">Moradia<i id="8" class="fas fa-chevron-down"></i></button>
+            <div id="7" class="dropdown-content">
+              <a href="#">Lisboa</a>
+              <a href="#">Sintra</a>
+              <a href="#">Cascais</a>
+              <a href="#">Oeiras</a>
+              <a href="#">Porto</a>
+              <a href="#">Amadora</a>
+              <a href="#">Vila Nova de Gaia</a>
+              <a href="#">Almada</a>
+              <a href="#">Loures</a>
+              <a href="#">Vila Franca de Xira</a>
+              <a href="#">Seixal</a>
+              <a href="#">Odivelas</a>
+              <a href="#">Braga</a>
+              <a href="#">Portimão</a>
+              <a href="#">Matosinhos</a>
+              <a href="#">Setúbal</a>
+              <a href="#">Albufeira</a>
+              <a href="#">Maia</a>
+              <a href="#">Loulé</a>
+              <a href="#">Gondomar</a>
+              <a href="#">Coimbra</a>
+              <a href="#">Mafra</a>
+              <a href="#">Leiria</a>
+              <a href="#">Barreiro</a>
+              <a href="#">Funchal</a>
+              <a href="#">Alequer</a>
+              <a href="#">Vila Nova de Famalicão</a>
+              <a href="#">Faro</a>
+              <a href="#">Silves</a>
+              <a href="#">Montijo</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button onclick="abrir(9)" class="dropbtn">Terreno<i id="10" class="fas fa-chevron-down"></i></button>
+            <div id="9" class="dropdown-content">
+              <a href="#">Lisboa</a>
+              <a href="#">Sintra</a>
+              <a href="#">Cascais</a>
+              <a href="#">Oeiras</a>
+              <a href="#">Porto</a>
+              <a href="#">Amadora</a>
+              <a href="#">Vila Nova de Gaia</a>
+              <a href="#">Almada</a>
+              <a href="#">Loures</a>
+              <a href="#">Vila Franca de Xira</a>
+              <a href="#">Seixal</a>
+              <a href="#">Odivelas</a>
+              <a href="#">Braga</a>
+              <a href="#">Portimão</a>
+              <a href="#">Matosinhos</a>
+              <a href="#">Setúbal</a>
+              <a href="#">Albufeira</a>
+              <a href="#">Maia</a>
+              <a href="#">Loulé</a>
+              <a href="#">Gondomar</a>
+              <a href="#">Coimbra</a>
+              <a href="#">Mafra</a>
+              <a href="#">Leiria</a>
+              <a href="#">Barreiro</a>
+              <a href="#">Funchal</a>
+              <a href="#">Alequer</a>
+              <a href="#">Vila Nova de Famalicão</a>
+              <a href="#">Faro</a>
+              <a href="#">Silves</a>
+              <a href="#">Montijo</a>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+    </div>
+
+
+    <footer>
+      <div class="grid-footer">
+        <section>
+          <img src="img/header_logo.webp">
+          <h1>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </h1>
+        </section>
+
+        <section>
+          <a href="#">A RE/MAX</a>
+
+          <a href="#">A RE/MAX Internacional</a>
+
+          <a href="#">A RE/MAX Europa</a>
+
+          <a href="#">Contactos</a>
+        </section>
+
+        <section>
+          <a href="#">Seja um agente</a>
+          <a href="#">Franchising</a>
+          <a href="#">Porquê RE/MAX?</a>
+        </section>
+
+        <section>
+          <a href="#">Empreendimentos</a>
+          <a href="#">RE/MAX Collection</a>
+        </section>
+      </div>
+
+      <div class="grid-footer2">
+        <section>
+          <h1>© RE/MAX 2022 Direitos Reservados</h1>
+        </section>
+
+        <section>
+          <h2>Politica Privacidade</h2>
+          <h3> | </h3>
+          <h2>Condições de uso</h2>
+          <h3> | </h3>
+          <h2>Acesso aos seus dados pessoais</h2>
+          <h3> | </h3>
+          <h2>Declaração de Privacidade</h2>
+        </section>
+      </div>
+    </footer>
+
+
+  </div>
+
+  <div class="grid-js" id="js">
+    <h1>Calculadora Imobiliário</h1>
+    <form>
+      <section style="grid-column: 1/3;">
+        <input type="number" id="tipologia" placeholder="Ex: T1, T2, ..." required><br>
+
+        <input type="number" id="area" placeholder="Área por m/2" required><br>
+
+        <input type="number" id="idade" placeholder="Idade do Imóvel" required><br>
+      </section>
+
+      <section>
+        <h2>Proximidade de transportes públicos</h2>
+        <input type="radio" id="sim" name="ptp" value="Sim" class="radio" required>
+        <label for="sim">Sim</label><br>
+        <input type="radio" id="nao" name="ptp" value="Não" class="radio" required>
+        <label for="nao">Não</label><br>
+      </section>
+
+      <section>
+        <h2>Garagem</h2>
+        <input type="radio" id="sim_g" name="garagem" value="Sim" class="radio" required>
+        <label for="sim_g">Sim</label><br>
+        <input type="radio" id="nao_g" name="garagem" vale="Não" class="radio" required>
+        <label for="nao_g">Não</label><br>
+      </section>
+
+      <a href="#zona"><button id="sub" class="btn" type="button">Submeter</button></a>
+      <button id="reset" type="reset" class="btn-s">Limpar</button>
+
+    </form>
+
+    <div class="grid-zona" id="zona">
+      <h5 style="grid-column: 1/4; text-align: left;">Escolha a zona (ao clicar, o financiamento é gerado)</h5>
+      <a id="z1" href="#fn">
+        <section>
+          <h3></h3>
+          <h1>Zona 1</h1>
+          <h2>(1200 €/m<sup>2</sup>)</h2>
+          <h3 id="result1"></h3>
+          <div class="info">
+            <h4 id="area-r1"></h4>
+            <h4 id="gar1"></h4>
+            <h4 id="ptp1"></h4>
+          </div>
+        </section>
+      </a>
+
+      <a id="z2" href="#fn">
+        <section>
+          <h3></h3>
+          <h1>Zona 2</h1>
+          <h2>(2000 €/m<sup>2</sup>)</h2>
+          <h3 id="result2"></h3>
+          <div class="info">
+            <h4 id="area-r2"></h4>
+            <h4 id="gar2"></h4>
+            <h4 id="ptp2"></h4>
+          </div>
+        </section>
+      </a>
+
+      <a id="z3" href="#fn">
+        <section>
+          <h3></h3>
+          <h1>Zona 3</h1>
+          <h2>(2500 €/m<sup>2</sup>)</h2>
+          <h3 id="result3"></h3>
+          <div class="info">
+            <h4 id="area-r3"></h4>
+            <h4 id="gar3"></h4>
+            <h4 id="ptp3"></h4>
+          </div>
+        </section>
+      </a>
+    </div>
+
+    <div class="grid-fn" id="fn-main">
+
+      <form class="form-f" id="fn">
+
+        <section style="grid-column: 1/3;">
+          <input id="entrada" type="number" placeholder="Montante de Entrada" required>
+          <input id="mfn" type="number" placeholder="Montante de Financiado" required>
+          <input id="prazo" type="number" placeholder="Prazo em anos" required>
+        </section>
+
+        <section><a href="#fn"><button id="sub-f" class="btn" type="button">Submeter</button></a></section>
+        <section><button id="reset" type="reset-f" class="btn-s">Limpar</button></section>
+      </form>
+
+      <div class="grid-fn-f" id="fn-f">
+        <section style="color: white; background: transparent; grid-column: 1/5;">
+          <h1>Montante Total: <span id="total1"></span>€</h1>
+          <h1>Entrada: <span id="entrada1"></span>€</h1>
+        </section>
+        <section>
+          <img src="img/f1.png">
+          <h1>Valor do empréstimo: <span id="emp1"></span>€</h1>
+          <h1>Taxa de Juro Global: <span id="taxa1"></span>%</h1>
+          <h1>Spread: <span id="spread1"></span>%</h1>
+          <h1>Valor mensal: <span id="mensal1"></span>€</h1>
+        </section>
+
+        <section>
+          <img src="img/f2.png">
+          <h1>Valor do empréstimo: <span id="emp2"></span>€</h1>
+          <h1>Taxa de Juro Global: <span id="taxa2"></span>%</h1>
+          <h1>Spread: <span id="spread2"></span>%</h1>
+          <h1>Valor mensal: <span id="mensal2"></span>€</h1>
+        </section>
+
+        <section>
+          <img src="img/f3.png">
+          <h1>Valor do empréstimo: <span id="emp3"></span>€</h1>
+          <h1>Taxa de Juro Global: <span id="taxa3"></span>%</h1>
+          <h1>Spread: <span id="spread3"></span>%</h1>
+          <h1>Valor mensal: <span id="mensal3"></span>€</h1>
+        </section>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="js.js"></script>
+
+</body>
+
+</html>
